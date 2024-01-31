@@ -48,7 +48,7 @@ const mongoDB = async () => {
     const catData = await foodCategory.find({}).toArray();
 
     global.food_items = data;
-    console.log(data);
+    // console.log(data);
     global.foodCategory = catData;
     // console.log(catData);
   } catch (err) {
